@@ -1,0 +1,219 @@
+/* Base styles for larger screens */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #e6e6e6;
+}
+
+.intro__in {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__in__left {
+    background-image: url("../../../public/img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 49%;
+    height: 640px;
+    color: white;
+}
+
+.button__one {
+    width: 200px;
+    height: 30px;
+    margin-top: 55px;
+    margin-left: 60px;
+    background: none;
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.intro__in__left h2 {
+    color: white;
+    font-size: 50px;
+    width: 500px;
+    line-height: 50px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.intro__in__left p {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 60px;
+    width: 400px;
+}
+
+.button__two {
+    width: 569px;
+    outline: none;
+    border: none;
+    height: 80px;
+    font-size: 20px;
+    color: white;
+    background: #4DC490;
+    margin-top: 110px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.intro__in__right {
+    background-color: white;
+    width: 49%;
+    height: 640px;
+    padding-left: 60px;
+    border-radius: 8px;
+}
+
+.intro__in__right h2 {
+    margin-top: 55px;
+    font-size: 35px;
+    line-height: 40px;
+    width: 500px;
+}
+
+.input-group {
+    margin-top: 20px;
+    position: relative;
+}
+
+.input-group .input {
+    display: block;
+    width: 460px;
+    height: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    font-size: 18px;
+    color: black;
+}
+
+.input-error {
+    border-bottom: 2px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    z-index: 999;
+    text-align: right;
+    margin-right: 49px;
+}
+
+.intro__in__right button {
+    margin-top: 100px;
+    width: 460px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: #655AF2;
+}
+
+.intro__in__right button:active{
+    background: #3A2BF8;
+}
+
+.intro__in__right p {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #555;
+    margin-left: 60px;
+}
+
+.intro__in__right span {
+    color: red;
+}
+
+/* Media query for screens 345px and below */
+@media (max-width: 345px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .intro__in {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro__in__left,
+    .intro__in__right {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .intro__in__left h2 {
+        font-size: 30px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .intro__in__left p {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button__one,
+    .button__two {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .intro__in__right h2 {
+        font-size: 25px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .input-group .input {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .intro__in__right button {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .error {
+        position: static;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .intro__in__right p {
+        margin-left: 0;
+        text-align: center;
+    }
+}
